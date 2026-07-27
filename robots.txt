@@ -1,0 +1,5 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://alexvbs7891.github.io/barlogulluiroby/sitemap.xml
