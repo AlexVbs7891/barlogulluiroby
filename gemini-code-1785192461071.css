@@ -1,0 +1,42 @@
+/* css/responsive.css */
+@media screen and (max-width: 992px) {
+    .features-section {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+    }
+    .hero-title { font-size: 4rem; }
+}
+
+@media screen and (max-width: 768px) {
+    .custom-cursor, .mouse-glow { display: none; }
+    * { cursor: auto !important; }
+    
+    .nav-links {
+        position: fixed;
+        top: 0; right: -100%;
+        width: 250px; height: 100vh;
+        background: rgba(7, 7, 15, 0.95);
+        backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: 0.4s ease-in-out;
+        border-left: 1px solid var(--glass-border);
+    }
+    .nav-links.active { right: 0; }
+    .nav-links a { margin: 0; font-size: 1.5rem; }
+    .hamburger { display: block; cursor: pointer !important; }
+    
+    .hero-title { font-size: 3rem; }
+    .hero-subtitle { font-size: 1.2rem; }
+    
+    .features-section { grid-template-columns: 1fr; }
+    .shop-header h1 { font-size: 2.2rem; }
+    .category-filters { flex-wrap: wrap; justify-content: center; }
+    .contact-card { padding: 2rem 1rem; }
+    .payment-grid { flex-direction: column; }
+    
+    .glitch-title { font-size: 5rem; }
+}
